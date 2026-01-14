@@ -1,8 +1,8 @@
 class RustedDoomLauncher < Formula
   desc "Launch GZDoom with community WADs - a Tauri-based launcher"
   homepage "https://github.com/stared/rusted-doom-launcher"
-  url "https://github.com/stared/rusted-doom-launcher/archive/refs/tags/v0.1.1.tar.gz"
-  sha256 "27129a9ee883f8c667fae730c5bb244d015a709f7425049c6becdff85f9980a2"
+  url "https://github.com/stared/rusted-doom-launcher/archive/refs/tags/v0.1.2.tar.gz"
+  sha256 "b06df9fbb28a80b5fed8334c43e209a00986d02ba3498931b6160ff6e4a3b45b"
   license "MIT"
 
   depends_on "node" => :build

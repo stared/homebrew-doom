@@ -6,23 +6,28 @@ Homebrew tap for Doom-related tools.
 
 ```bash
 brew tap stared/doom
+```
+
+### Cask (recommended, fast)
+
+Downloads pre-built app. Apple Silicon only.
+
+```bash
+brew install --cask rusted-doom-launcher
+```
+
+### Formula (builds from source)
+
+Builds from source. Takes longer but works on any Mac.
+
+```bash
 brew install rusted-doom-launcher
 ```
 
-## Available Formulae
+## Requirements
 
-### rusted-doom-launcher
-
-A Tauri-based launcher for GZDoom with community WADs.
-
-- Builds from source (no Gatekeeper/quarantine issues)
-- Requires: GZDoom (`brew install --cask gzdoom`)
-
-```bash
-brew install stared/doom/rusted-doom-launcher
-```
-
-After installation, run with `rusted-doom-launcher` or find the app in `/opt/homebrew/opt/rusted-doom-launcher/`.
+- **GZDoom**: `brew install --cask gzdoom`
+- **DOOM.WAD** or **DOOM2.WAD** (from Steam or GOG)
 
 ## More Info
 
