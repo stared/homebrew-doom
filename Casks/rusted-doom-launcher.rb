@@ -20,6 +20,6 @@ cask "rusted-doom-launcher" do
   caveats <<~EOS
     Rusted Doom Launcher requires:
     - UZDoom or GZDoom: brew install --cask gzdoom
-    - DOOM.WAD or DOOM2.WAD (from Steam or GOG)
+    - DOOM.WAD or DOOM2.WAD (from GOG or Steam)
   EOS
 end

@@ -28,7 +28,7 @@ brew install rusted-doom-launcher
 
 - [UZDoom](https://github.com/UZDoom/UZDoom): `brew install --cask stared/doom/uzdoom` (recommended), or
 - [GZDoom](https://github.com/ZDoom/gzdoom): `brew install --cask gzdoom` (older)
-- **DOOM.WAD** or **DOOM2.WAD** (from Steam or GOG)
+- **DOOM.WAD** or **DOOM2.WAD** (from [GOG](https://www.gog.com/en/game/doom_doom_ii) or Steam)
 
 ## More Info
 

@@ -15,6 +15,6 @@ cask "uzdoom" do
     UZDoom is a community fork of GZDoom.
 
     You'll also need game data:
-    - DOOM.WAD or DOOM2.WAD (from Steam or GOG)
+    - DOOM.WAD or DOOM2.WAD (from GOG or Steam)
   EOS
 end

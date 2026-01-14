@@ -70,7 +70,7 @@ class RustedDoomLauncher < Formula
 
       Requirements:
         - UZDoom or GZDoom: brew install --cask gzdoom
-        - DOOM.WAD or DOOM2.WAD (from Steam or GOG)
+        - DOOM.WAD or DOOM2.WAD (from GOG or Steam)
     EOS
   end
 
