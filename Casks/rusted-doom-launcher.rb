@@ -4,7 +4,7 @@ cask "rusted-doom-launcher" do
 
   url "https://github.com/stared/rusted-doom-launcher/releases/download/v#{version}/Rusted.Doom.Launcher_#{version}_aarch64.dmg"
   name "Rusted Doom Launcher"
-  desc "Launch GZDoom with community WADs"
+  desc "Launch Doom source ports (UZDoom/GZDoom) with community WADs"
   homepage "https://github.com/stared/rusted-doom-launcher"
 
   depends_on macos: ">= :monterey"
@@ -19,7 +19,7 @@ cask "rusted-doom-launcher" do
 
   caveats <<~EOS
     Rusted Doom Launcher requires:
-    - GZDoom: brew install --cask gzdoom
+    - UZDoom or GZDoom: brew install --cask gzdoom
     - DOOM.WAD or DOOM2.WAD (from Steam or GOG)
   EOS
 end

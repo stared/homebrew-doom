@@ -1,5 +1,5 @@
 class RustedDoomLauncher < Formula
-  desc "Launch GZDoom with community WADs - a Tauri-based launcher"
+  desc "Launch Doom source ports (UZDoom/GZDoom) with community WADs"
   homepage "https://github.com/stared/rusted-doom-launcher"
   url "https://github.com/stared/rusted-doom-launcher/archive/refs/tags/v0.1.2.tar.gz"
   sha256 "b06df9fbb28a80b5fed8334c43e209a00986d02ba3498931b6160ff6e4a3b45b"
@@ -30,11 +30,12 @@ class RustedDoomLauncher < Formula
   end
 
   def post_install
-    # Check for GZDoom
+    # Check for UZDoom or GZDoom
+    uzdoom_app = "/Applications/UZDoom.app"
     gzdoom_app = "/Applications/GZDoom.app"
     gzdoom_cask = "/opt/homebrew/Caskroom/gzdoom"
-    unless File.exist?(gzdoom_app) || File.exist?(gzdoom_cask)
-      opoo "GZDoom not found! Install it with: brew install --cask gzdoom"
+    unless File.exist?(uzdoom_app) || File.exist?(gzdoom_app) || File.exist?(gzdoom_cask)
+      opoo "Doom engine not found! Install with: brew install --cask gzdoom"
     end
 
     # Symlink to /Applications for convenience (optional, may fail without sudo)
@@ -68,7 +69,7 @@ class RustedDoomLauncher < Formula
         ln -s "#{prefix}/Rusted Doom Launcher.app" /Applications/
 
       Requirements:
-        - GZDoom: brew install --cask gzdoom
+        - UZDoom or GZDoom: brew install --cask gzdoom
         - DOOM.WAD or DOOM2.WAD (from Steam or GOG)
     EOS
   end
