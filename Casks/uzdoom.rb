@@ -11,6 +11,12 @@ cask "uzdoom" do
 
   app "uzdoom.app", target: "UZDoom.app"
 
+  postflight do
+    system_command "/usr/bin/xattr",
+                   args: ["-cr", "#{appdir}/UZDoom.app"],
+                   sudo: false
+  end
+
   caveats <<~EOS
     UZDoom is a community fork of GZDoom.
 
