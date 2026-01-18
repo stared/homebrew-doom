@@ -1,10 +1,10 @@
 cask "rusted-doom-launcher" do
-  version "0.1.3"
-  sha256 "9f89f363907f608017d99d3a11004b4b2997786c3508aeccac20efba8f73578c"
+  version "0.1.4"
+  sha256 "742e5907deb743514a47816a920d799c55cc7ff944378213612239eabfae1aed"
 
   url "https://github.com/stared/rusted-doom-launcher/releases/download/v#{version}/Rusted.Doom.Launcher_#{version}_aarch64.dmg"
   name "Rusted Doom Launcher"
-  desc "Launch Doom source ports (UZDoom/GZDoom) with community WADs"
+  desc "A modern launcher for classic Doom"
   homepage "https://github.com/stared/rusted-doom-launcher"
 
   depends_on macos: ">= :monterey"
@@ -19,7 +19,7 @@ cask "rusted-doom-launcher" do
 
   caveats <<~EOS
     Rusted Doom Launcher requires:
-    - UZDoom or GZDoom: brew install --cask gzdoom
-    - DOOM.WAD or DOOM2.WAD (from GOG or Steam)
+    - UZDoom or GZDoom: brew install --cask stared/doom/uzdoom
+    - doom.wad or doom2.wad (from GOG or Steam)
   EOS
 end
