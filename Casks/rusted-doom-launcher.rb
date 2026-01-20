@@ -1,6 +1,6 @@
 cask "rusted-doom-launcher" do
   version "0.1.5"
-  sha256 "dbf534346639ad5d6fd231cf54a2e7be6f8bef22f13363f764bb472ad28bc248"
+  sha256 "233d477ee32245a171ab1f288777e3fe5cad678f58f1ec80436ac0c3d8719e9b"
 
   url "https://github.com/stared/rusted-doom-launcher/releases/download/v#{version}/Rusted.Doom.Launcher_#{version}_aarch64.dmg"
   name "Rusted Doom Launcher"
