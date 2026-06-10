@@ -1,8 +1,8 @@
 class RustedDoomLauncher < Formula
   desc "Launch Doom source ports (UZDoom/GZDoom) with community WADs"
   homepage "https://github.com/stared/rusted-doom-launcher"
-  url "https://github.com/stared/rusted-doom-launcher/archive/refs/tags/v0.3.4.tar.gz"
-  sha256 "a405c59d56972f46dce74a8b7700122d9ca554b95b43890a1c4709cb7276bda1"
+  url "https://github.com/stared/rusted-doom-launcher/archive/refs/tags/v0.3.5.tar.gz"
+  sha256 "0a3f2d3bf078f41b60b35729262db6a8c05b1cde9e8fd4130f649c00efbe20c5"
   license "MIT"
 
   depends_on "node" => :build
