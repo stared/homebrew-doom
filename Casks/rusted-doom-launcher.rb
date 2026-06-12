@@ -7,7 +7,7 @@ cask "rusted-doom-launcher" do
   desc "A modern launcher for classic Doom"
   homepage "https://github.com/stared/rusted-doom-launcher"
 
-  depends_on macos: ">= :monterey"
+  depends_on macos: :monterey
   depends_on arch: :arm64
 
   app "Rusted Doom Launcher.app"

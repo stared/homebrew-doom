@@ -7,7 +7,7 @@ cask "uzdoom" do
   desc "Modern Doom source port (GZDoom fork)"
   homepage "https://github.com/UZDoom/UZDoom"
 
-  depends_on macos: ">= :monterey"
+  depends_on macos: :monterey
 
   app "uzdoom.app", target: "UZDoom.app"
 
